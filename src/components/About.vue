@@ -1,18 +1,11 @@
 <template>
-  <MainLayout>
-    <template v-slot:seccion1>
-      <section class="seccion-uno">
-        <div class="card"></div>
-      </section>
-    </template>
-    <template v-slot:seccion2>
-      <section class="seccion-dos">
+      <section :class="['about', theme]">
         <h3 class="mb-1">Mariana Ramírez</h3>
         <h5 class="mb-5">Frontend Dev</h5>
         <div class="container d-flex flex-row justify-content-evenly mb-5">
           <router-link :to="{ name: 'portafolio' }">
             <button class="button">
-              <span class="button-text">Portafolio</span>
+              <span class="button-text" v-html="aboutBriefcase"></span>
             </button>
           </router-link>
           <router-link :to="{ name: 'cv' }">
@@ -23,32 +16,41 @@
           <p v-html="about"></p>
         </div>
       </section>
-    </template>
-  </MainLayout>
 </template>
 <script setup>
-import MainLayout from "../layout/MainLayout.vue";
 import { useLanguageStore } from "../store/language";
+import { useThemeStore } from "../store/theme";
 import { ref, watchEffect } from "vue";
+
+const storeTheme = useThemeStore();
+const theme = ref(storeTheme.currentMode);
+
+// Watch changes
+watchEffect(() => {
+  console.log(theme.value);
+  theme.value = storeTheme.currentMode;
+});
+/*** Mode state***/
+
 
 /*** Lang state***/
 const store = useLanguageStore();
 const about = ref(store.languages[store.currentLanguage].about);
+const aboutBriefcase = ref(store.languages[store.currentLanguage].about_briefcase);
 // Watch changes
 watchEffect(() => {
   about.value = store.languages[store.currentLanguage].about;
+  aboutBriefcase.value = store.languages[store.currentLanguage].about_briefcase;
+
 });
 /*** Lang state***/
 </script>
 <style lang="scss" scoped>
-@keyframes fadeInOut {
-  0%,
-  100% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: $font-family;
 }
 .back {
   background-color: yellowgreen;
@@ -100,10 +102,7 @@ watchEffect(() => {
 .button:hover {
   border: none;
 }
-.card {
-  width: 100%;
-  border: thin solid red;
-}
+
 .card div {
   position: absolute;
   width: 100%;
@@ -123,19 +122,13 @@ watchEffect(() => {
   width: 80%;
   text-align: justify;
 }
-.front {
-  background-color: transparent;
-  transform: perspective(500px) rotateY(0deg);
-  transition: opacity 1.5s;
-  animation: opacidad 1.5s ease;
-  border: none;
+.dark {
+  background-color: black !important;
+  color: white !important;
 }
-img {
-  width: 100%;
-  height: 100%;
-  transition: opacity 1.5s;
-  animation: opacidad 1.5s ease;
-  border: none;
+.light {
+  background-color: white !important;
+  color: $color-texto !important;
 }
 .ov-icon:hover {
   fill: $color-morado;
@@ -187,5 +180,6 @@ p {
     width: auto;
     height: auto;
   }
+  
 }
 </style>

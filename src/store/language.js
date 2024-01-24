@@ -7,6 +7,7 @@ export const useLanguageStore = defineStore("lang", {
       "🇬🇧": {
         about:
           "Soy autodidacta en el desarrollo web frontend y una persona curiosa. Me gusta buscar nuevos retos para expandir conocimientos y mejorar mis capacidades tanto en el ámbito personal como en el profesional. En mi tiempo libre me gusta salir a caminar, me gusta la naturaleza, la literatura, tejer, programar, y ejercitarme. <br>Bienvenido a mi espacio personal, aquí encontrarás los proyectos que he realizado a lo largo de mi formación como autodidacta y algunos proyectos para clientes.",
+        about_briefcase: "Portafolio",
         contact:
           "¿Tienes algún comentario, crítica o sugerencia? Puedes hacérmelo saber enviándome un correo o poniéndote en contacto conmigo a través de mis redes sociales",
         contact_title: "Contáctame",
@@ -36,6 +37,7 @@ export const useLanguageStore = defineStore("lang", {
       "🇪🇸": {
         about:
           "I am self-taught in frontend web development and a curious person. I like to seek new challenges to expand knowledge and improve my abilities both personally and professionally. In my free time I like to go for a walk, I like nature, literature, knitting, programming, and exercising. <br>Welcome to my personal space, here you will find the projects that I have carried out throughout my training as a self-taught person and some projects for clients.",
+        about_briefcase: "Briefcase",
         contact:
           "Do you have any comments, criticisms or suggestions? You can let me know by sending me an email or contacting me through my social networks",
         contact_title: "Contact me",

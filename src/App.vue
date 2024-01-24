@@ -223,9 +223,9 @@ img {
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
 }
-
 .light {
   background-color: white !important;
+  color: $color-texto !important;
 }
 .lang button {
   width: 1.5rem;
