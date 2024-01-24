@@ -31,11 +31,11 @@ html,
   font-family: $font_family;
 }
 .dark {
-  background-color: black !important;
-  color: white !important;
+  background-color: $color-dark-theme !important;
+  color: $color-light-theme !important;
 }
 .light {
-  background-color: white !important;
+  background-color: $color-light-theme !important;
   color: $color-texto !important;
 }
 .contenedor-layout {

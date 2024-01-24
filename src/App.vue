@@ -205,8 +205,8 @@ body,
   box-shadow: 1px 1px 8px rgb(111, 23, 227);
 }
 .dark {
-  background-color: black !important;
-  color: white !important;
+  background-color: $color-dark-theme !important;
+  color: $color-light-theme !important;
 }
 img {
   width: 1.8rem;
@@ -224,7 +224,7 @@ img {
   filter: drop-shadow(0 0 2em #42b883aa);
 }
 .light {
-  background-color: white !important;
+  background-color: $color-light-theme !important;
   color: $color-texto !important;
 }
 .lang button {

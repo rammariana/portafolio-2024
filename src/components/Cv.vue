@@ -34,7 +34,7 @@ watchEffect(() => {
 </script>
 <style lang="scss" scoped>
 .layout-cv {
-  width: 85vw;
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;

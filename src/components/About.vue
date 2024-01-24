@@ -123,11 +123,11 @@ watchEffect(() => {
   text-align: justify;
 }
 .dark {
-  background-color: black !important;
-  color: white !important;
+  background-color: $color-dark-theme !important;
+  color: $color-light-theme !important;
 }
 .light {
-  background-color: white !important;
+  background-color: $color-light-theme !important;
   color: $color-texto !important;
 }
 .ov-icon:hover {
