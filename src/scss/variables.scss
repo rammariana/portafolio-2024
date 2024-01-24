@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+$color-barra-activa: rgba(233, 209, 226, 0.801);
+$color-barra-pasiva: rgba(175, 156, 171, 0.767);
+$color-morado: #ec86fa;
+$color-morado-oscuro: rgb(111, 10, 141);
+$color-naranja: rgb(252, 104, 35);
+$color-amarillo: rgb(250, 212, 18);
+$color-celeste: rgb(122, 192, 224);
+$color-rojo: rgb(226, 27, 27);
+$color-blanco: rgb(255, 254, 254);
+$color-naranja-ligero: rgb(252, 140, 35);
+$color-blanco-focus: rgba(255, 255, 255, 0.438);
+$color-naranja-focus: rgb(252, 104, 35, 0.205);
+$color-rojo-focus: rgba(226, 27, 27, 0.568);
+$color-negro: rgb(32, 37, 46);
+$color-texto: rgb(142, 146, 150);
+$carousel-transition-duration: 0.2s;
+$font-family: "Montserrat", sans-serif;
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes desplazar {
+  0% {
+    transform: translateY(30%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
+img {
+  view-timeline-name: --image;
+  view-timeline-axis: blok;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 25% cover 50%;
+  animation-fill-mode: both;
+}
+
+@keyframes aparecer-derecha {
+  from {
+    display: none;
+    transform: translateX(100%);
+    -moz-transform: translateX(100%);
+  }
+  to {
+    display: block;
+    transform: translateX(0);
+    -moz-transform: translateX(0);
+  }
+}
+@keyframes aparecer-izquierda {
+  from {
+    display: none;
+    transform: translateX(-110%);
+    -moz-transform: translateX(-110%);
+  }
+  to {
+    display: block;
+    transform: translateX(0%);
+    -moz-transform: translateX(0%);
+  }
+}
+
+@keyframes rellenar-boton {
+  0% {
+    width: 0%;
+    background-color: $color-blanco-focus;
+  }
+  100% {
+    width: 100%;
+    background-color: $color-naranja;
+  }
+}
