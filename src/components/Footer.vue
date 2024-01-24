@@ -46,7 +46,6 @@ html,
   padding: 3rem 2rem;
   text-align: center;
   background-image: linear-gradient(
-    $color-blanco,
     $color-morado 25%,
     $color-amarillo
   );
