@@ -69,6 +69,8 @@ watchEffect(() => {
   contact.value = store.languages[store.currentLanguage].contact;
   contactTitle.value = store.languages[store.currentLanguage].contact_title;
   contactBtn.value = store.languages[store.currentLanguage].contact_btn;
+  contactMeet = ref(store.languages[store.currentLanguage].contact_meet);
+
 });
 </script>
 <style lang="scss" scoped>
