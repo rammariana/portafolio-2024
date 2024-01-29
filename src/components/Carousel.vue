@@ -36,9 +36,11 @@
             </button>
             <button class="button">
               <span class="button-text"
-                ><a href="https://...">
-                  <v-icon name="md-add-round" scale="1.5"></v-icon> </a
-              ></span>
+                >
+                <router-link :to="{ name: 'cronos' }">
+                  <v-icon name="md-add-round" scale="1.5"></v-icon> 
+                </router-link>
+              </span>
             </button>
             <button class="button">
               <span class="button-text"
@@ -80,10 +82,11 @@
               ></span>
             </button>
             <button class="button">
-              <span class="button-text"
-                ><a href="https://...">
-                  <v-icon name="md-add-round" scale="1.5"></v-icon> </a
-              ></span>
+              <span class="button-text">
+                <router-link :to="{ name: 'meetease' }">
+                  <v-icon name="md-add-round" scale="1.5"></v-icon> 
+                </router-link>
+            </span>
             </button>
             <button class="button">
               <span class="button-text"
@@ -131,19 +134,20 @@
               ></span>
             </button>
             <button class="button">
-              <span class="button-text"
-                ><a href="https://...">
-                  <v-icon name="md-add-round" scale="1.5"></v-icon> </a
-              ></span>
+              <span class="button-text">
+                <router-link :to="{ name: 'barrazainvestors' }">
+                  <v-icon name="md-add-round" scale="1.5"></v-icon> 
+                </router-link>
+            </span>
             </button>
             <button class="button">
-              <span class="button-text"
-                ><a
+              <span class="button-text">
+                <a
                   href="https://github.com/rammariana/barraza-investors"
-                  target="_blank"
-                >
-                  <v-icon name="bi-code-slash" scale="1.5"></v-icon> </a
-              ></span>
+                  target="_blank">
+                  <v-icon name="bi-code-slash" scale="1.5"></v-icon>
+                </a>
+                </span>
             </button>
           </div>
         </div>
@@ -175,10 +179,11 @@
               ></span>
             </button>
             <button class="button">
-              <span class="button-text"
-                ><a href="https://...">
-                  <v-icon name="md-add-round" scale="1.5"></v-icon> </a
-              ></span>
+              <span class="button-text">
+                <router-link :to="{ name: 'idtly' }">
+                  <v-icon name="md-add-round" scale="1.5"></v-icon> 
+                </router-link>
+              </span>
             </button>
             <button class="button">
               <span class="button-text"
@@ -210,10 +215,11 @@
               ></span>
             </button>
             <button class="button">
-              <span class="button-text"
-                ><a href="https://...">
-                  <v-icon name="md-add-round" scale="1.5"></v-icon> </a
-              ></span>
+              <span class="button-text">
+                <router-link :to="{ name: 'balto' }">
+                  <v-icon name="md-add-round" scale="1.5"></v-icon> 
+                </router-link>
+            </span>
             </button>
             <button class="button">
               <span class="button-text"
@@ -251,10 +257,11 @@
               ></span>
             </button>
             <button class="button">
-              <span class="button-text"
-                ><a href="https://...">
-                  <v-icon name="md-add-round" scale="1.5"></v-icon> </a
-              ></span>
+              <span class="button-text">
+                <router-link :to="{ name: 'pokememory' }">
+                  <v-icon name="md-add-round" scale="1.5"></v-icon> 
+                </router-link>
+            </span>
             </button>
             <button class="button">
               <span class="button-text"

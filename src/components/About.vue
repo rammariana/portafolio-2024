@@ -3,11 +3,9 @@
         <h3 class="mb-1">Mariana Ramírez</h3>
         <h5 class="mb-5">Frontend Dev</h5>
         <div class="container d-flex flex-row justify-content-evenly mb-5">
-          <router-link :to="{ name: 'portafolio' }">
-            <button class="button">
+            <button class="button" @click="handleScroll">
               <span class="button-text" v-html="aboutBriefcase"></span>
             </button>
-          </router-link>
           <router-link :to="{ name: 'cv' }">
             <button class="button"><span class="button-text">Cv</span></button>
           </router-link>
@@ -22,8 +20,16 @@ import { useLanguageStore } from "../store/language";
 import { useThemeStore } from "../store/theme";
 import { ref, watchEffect } from "vue";
 
+const handleScroll = () => {
+  window.scroll({
+  top: 0,
+  behavior: "smooth",
+});
+}
+
 const storeTheme = useThemeStore();
 const theme = ref(storeTheme.currentMode);
+
 
 // Watch changes
 watchEffect(() => {
@@ -102,7 +108,6 @@ watchEffect(() => {
 .button:hover {
   border: none;
 }
-
 .card div {
   position: absolute;
   width: 100%;

@@ -35,7 +35,7 @@ watchEffect(() => {
 <style lang="scss" scoped>
 .layout-cv {
   width: 100%;
-  height: auto;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
