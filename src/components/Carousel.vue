@@ -5,6 +5,16 @@
     data-bs-ride="carousel"
   >
     <div class="carousel-inner">
+        <!-- Indicators / Indicadores -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    </div>
+  <!-- Indicators / Indicadores -->
       <!-- Diapositiva 1-->
       <div class="carousel-item active">
         <div class="cuadrado">
@@ -359,6 +369,9 @@ body {
   height: 100vh !important;
   animation: aparecer 1s ease;
 }
+.carousel-indicators {   [data-bs-target] {
+  background-color: $color-amarillo;
+}  }
 .carousel-item {
   height: 100%;
   text-align: center;

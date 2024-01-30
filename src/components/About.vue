@@ -57,10 +57,7 @@ watchEffect(() => {
   flex-direction: column;
   align-items: center;
   font-family: $font-family;
-}
-.back {
-  background-color: yellowgreen;
-  transform: perspective(500px) rotateY(180deg);
+  padding-top: 3rem;
 }
 .button {
   width: 6rem;
