@@ -366,12 +366,18 @@ body {
 }
 // Bootstrap carousel
 .carousel {
-  height: 100vh !important;
+  height: 90vh !important;
   animation: aparecer 1s ease;
 }
-.carousel-indicators {   [data-bs-target] {
-  background-color: $color-amarillo;
-}  }
+.carousel-indicators {   
+  margin-bottom: -0.5rem;
+  [data-bs-target] {
+    background-color: $color-amarillo;
+  }  
+}
+.carousel-inner {
+  height: 100%;
+}
 .carousel-item {
   height: 100%;
   text-align: center;
