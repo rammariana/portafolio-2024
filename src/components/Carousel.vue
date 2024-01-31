@@ -366,8 +366,9 @@ body {
 }
 // Bootstrap carousel
 .carousel {
-  height: 90vh !important;
+  height: 95vh !important;
   animation: aparecer 1s ease;
+  margin-top: 0.5rem;
 }
 .carousel-indicators {   
   margin-bottom: -0.5rem;
@@ -479,7 +480,19 @@ video {
   border-radius: 1rem;
 }
 
+@media screen and (min-width: 500px) {
+  .tecnologias {
+    top: 73%;
+  }
+  .btn-container {
+    top: 75%;
+  }
+}
+
 @media screen and (min-width: 600px) {
+  .tecnologias {
+    top: 74%;
+  }
   .btn-container {
     top: 75%;
   }
@@ -492,9 +505,6 @@ video {
     left: 24rem;
     width: 11rem;
     height: 11rem;
-  }
-  .tecnologias {
-    top: 70%;
   }
   .video {
     width: 22rem;
