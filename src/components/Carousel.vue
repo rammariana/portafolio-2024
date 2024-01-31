@@ -440,7 +440,7 @@ body {
 .foto-g,
 .foto-p {
   position: absolute;
-  box-shadow: 1px 0px 9px 0.5px $color-negro;
+  box-shadow: 2px 14px 20px 0 $color-texto;
 }
 .foto-g {
   width: 12rem;
@@ -476,7 +476,7 @@ video {
   object-fit: cover;
   top: 8rem;
   left: 10%;
-  box-shadow: 1px 0px 9px 0.5px $color-negro;
+  box-shadow: 2px 14px 20px 0 $color-texto;
   border-radius: 1rem;
 }
 
