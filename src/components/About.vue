@@ -57,7 +57,7 @@ watchEffect(() => {
   flex-direction: column;
   align-items: center;
   font-family: $font-family;
-  padding-top: 3rem;
+  padding-top: 5rem;
 }
 .button {
   width: 6rem;

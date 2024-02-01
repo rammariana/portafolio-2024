@@ -366,7 +366,7 @@ body {
 }
 // Bootstrap carousel
 .carousel {
-  height: 95vh !important;
+  height: 90vh !important;
   animation: aparecer 1s ease;
   margin-top: 0.5rem;
 }
