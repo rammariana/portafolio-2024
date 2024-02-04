@@ -38,6 +38,7 @@ import {
   RiLinkedinFill,
   BiMortarboardFill, // birrete
   GiBriefcase,
+  SiVite,
 } from "oh-vue-icons/icons";
 
 addIcons(
@@ -72,7 +73,8 @@ addIcons(
   CoGithub,
   RiLinkedinFill,
   BiMortarboardFill,
-  GiBriefcase
+  GiBriefcase,
+  SiVite
 );
 const pinia = createPinia();
 const app = createApp(App);

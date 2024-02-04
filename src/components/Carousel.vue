@@ -36,6 +36,7 @@
             <v-icon name="si-mongodb" scale="1.8"></v-icon>
             <v-icon name="si-bootstrap" scale="1.8"></v-icon>
             <v-icon name="co-github" scale="1.8"></v-icon>
+            <v-icon name="si-vite" scale="1.8"></v-icon>
           </div>
           <div class="btn-container">
             <button class="button">
@@ -424,7 +425,7 @@ body {
   width: 100vw;
   height: 100vh;
   h3 {
-    top: 10%;
+    top: 5rem;
     position: inherit;
   }
 }
@@ -490,11 +491,14 @@ video {
 }
 
 @media screen and (min-width: 600px) {
-  .tecnologias {
-    top: 74%;
-  }
   .btn-container {
     top: 75%;
+  }
+  .carousel {
+    height: 95vh !important;
+  }
+  .tecnologias {
+    top: 74%;
   }
   .foto-g {
     left: 10rem;
@@ -513,6 +517,7 @@ video {
   }
 }
 @media screen and (min-width: 800px) {
+  
   .foto-g {
     left: 35%;
   }

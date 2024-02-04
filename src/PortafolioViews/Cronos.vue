@@ -11,6 +11,7 @@
           <v-icon name="si-mongodb" scale="1.8"></v-icon>
           <v-icon name="si-bootstrap" scale="1.8"></v-icon>
           <v-icon name="co-github" scale="1.8"></v-icon>
+            <v-icon name="si-vite" scale="1.8"></v-icon>
         </div>
         <div class="btn-container">
           <button class="button">
